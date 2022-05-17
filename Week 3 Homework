@@ -1,0 +1,9 @@
+# Make a function that takes two arguments (given name and family name), the second of which is optional. Print a greeting according to which arguments are provided. Example output: “Hello Kenneth.” or “Hello there, Kenneth of Lim!” 
+
+greet = " Hello, how you doing today, "
+
+fi = (input('Tell me your first name:'))
+fe = (input('Tell me your last name:'))
+
+print (greet + fi + " " + fe + '?')
+

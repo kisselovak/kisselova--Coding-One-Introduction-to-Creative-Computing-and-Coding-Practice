@@ -1,0 +1,14 @@
+x# WEEK 1 - KATIE KISELOVA
+
+# Write a program that outputs “even” if a number is even and “odd
+# if a number is odd. Think about what if the value is neither even nor odd (the value can be fractional or it can even not be a number at all).
+# Hint: you may need to find out how to print a message to the terminal from Python and how to write + run a Python script file. 
+
+
+num = int(input("Enter a number: "))
+if (num % 2) == 0:
+    print(" {0} is Even")
+else:
+    print("{0} is Odd")
+    
+# For code to work you have to run it each time to get answer even or odd, is not a continues loop.

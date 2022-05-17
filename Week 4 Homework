@@ -1,0 +1,18 @@
+# Write a program that given a list of numbers, multiply all numbers in the list. Bonus for ignoring non-number element. Example: input: [1, 2, 3, 4], output: 24
+
+
+# Defining function for multiplication, a first number ,b second number
+def add_num(a,b):
+    multiply = a*b;
+# Return value
+    return multiply;
+    
+# input for first number- num1    
+num1=int(input("choose your first number: "))    
+
+# input for second number- num2
+num2=int(input("choose your second number: "))
+
+#Final function
+print("The final answer is", add_num(num1,num2))
+
