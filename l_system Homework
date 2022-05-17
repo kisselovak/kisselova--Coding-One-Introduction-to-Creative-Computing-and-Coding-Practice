@@ -1,0 +1,31 @@
+# Set initial state of l-system
+initial = "AB"
+
+# Rules for the l-system
+rules = {
+	"A": "AB",
+	"B": "A"
+}
+
+# l_system needs 3 parameters 
+def l_system(initial, rules, generation):
+        
+	current = initial
+	
+        # Repeat i number
+	for _ in range(0, generation):
+
+                # String variable "result"
+		result = ""
+
+		# Loop that goes throught each letter in "AB"
+		for state in current:
+			result += rules.get(state, state)
+
+		current = result
+
+	return current
+
+# Printing 10 times 
+for i in range(0, 10):
+	print( "{}: {}".format(i, l_system(initial, rules, i)) )
